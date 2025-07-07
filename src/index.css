@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional Financial Design System - Banking Theme
+All colors MUST be HSL for proper theming.
+*/
+
+@layer base {
+  :root {
+    /* Earthy color palette - Natural tones */
+    --background: 40 20% 96%;
+    --foreground: 25 15% 20%;
+
+    --card: 40 25% 98%;
+    --card-foreground: 25 15% 20%;
+
+    --popover: 40 25% 98%;
+    --popover-foreground: 25 15% 20%;
+
+    /* Primary: Warm earth brown */
+    --primary: 25 45% 35%;
+    --primary-foreground: 40 20% 96%;
+    --primary-glow: 25 45% 45%;
+
+    /* Secondary: Soft sage */
+    --secondary: 60 15% 85%;
+    --secondary-foreground: 25 25% 25%;
+
+    /* Muted: Warm beige */
+    --muted: 40 20% 90%;
+    --muted-foreground: 25 15% 50%;
+
+    /* Accent: Terracotta */
+    --accent: 15 55% 60%;
+    --accent-foreground: 40 20% 96%;
+
+    /* Success: Forest green */
+    --success: 120 40% 40%;
+    --success-foreground: 40 20% 96%;
+
+    /* Warning: Warm amber */
+    --warning: 35 70% 55%;
+    --warning-foreground: 25 15% 20%;
+
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 40 20% 96%;
+
+    --border: 40 15% 82%;
+    --input: 40 20% 88%;
+    --ring: 25 45% 35%;
+
+    --radius: 0.5rem;
+
+    /* Gradients for professional banking design */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+    --gradient-success: linear-gradient(135deg, hsl(var(--success)), hsl(145 65% 35%));
+
+    /* Shadows for depth and professionalism */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+    --shadow-card: 0 4px 12px -2px hsl(var(--primary) / 0.1);
+    --shadow-glow: 0 0 20px hsl(var(--primary-glow) / 0.3);
+
+    /* Animation and transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s ease-out;
+
+    --sidebar-background: 220 25% 95%;
+    --sidebar-foreground: 215 25% 25%;
+    --sidebar-primary: 215 85% 35%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 215 20% 88%;
+    --sidebar-accent-foreground: 215 25% 25%;
+    --sidebar-border: 215 20% 85%;
+    --sidebar-ring: 215 85% 35%;
+  }
+
+  .dark {
+    /* Dark earthy tones */
+    --background: 25 15% 8%;
+    --foreground: 40 20% 95%;
+
+    --card: 25 20% 10%;
+    --card-foreground: 40 20% 95%;
+
+    --popover: 25 20% 10%;
+    --popover-foreground: 40 20% 95%;
+
+    /* Primary: Lighter warm earth brown */
+    --primary: 25 45% 55%;
+    --primary-foreground: 25 15% 8%;
+    --primary-glow: 25 45% 65%;
+
+    /* Secondary: Dark sage */
+    --secondary: 60 15% 18%;
+    --secondary-foreground: 40 20% 85%;
+
+    /* Muted: Dark warm beige */
+    --muted: 25 15% 15%;
+    --muted-foreground: 40 15% 65%;
+
+    /* Accent: Darker terracotta */
+    --accent: 15 55% 70%;
+    --accent-foreground: 25 15% 8%;
+
+    /* Success: Lighter forest green */
+    --success: 120 40% 55%;
+    --success-foreground: 25 15% 8%;
+
+    /* Warning: Lighter warm amber */
+    --warning: 35 70% 65%;
+    --warning-foreground: 25 15% 8%;
+
+    --destructive: 0 60% 65%;
+    --destructive-foreground: 40 20% 95%;
+
+    --border: 25 15% 20%;
+    --input: 25 15% 18%;
+    --ring: 25 45% 55%;
+    
+    --sidebar-background: 25 15% 10%;
+    --sidebar-foreground: 40 20% 95%;
+    --sidebar-primary: 25 45% 55%;
+    --sidebar-primary-foreground: 25 15% 8%;
+    --sidebar-accent: 25 15% 18%;
+    --sidebar-accent-foreground: 40 20% 95%;
+    --sidebar-border: 25 15% 20%;
+    --sidebar-ring: 25 45% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
